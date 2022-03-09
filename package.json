@@ -1,0 +1,15 @@
+{
+  "name": "stats-typescript",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ts:compile": "tsc --watch",
+    "js:run": "nodemon ./build/index.js",
+    "dev": "concurrently yarn:ts:compile yarn:js:run"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.6.2"
+  }
+}
