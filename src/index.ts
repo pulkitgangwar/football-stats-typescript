@@ -1,10 +1,9 @@
-import fs from "fs";
-import { CsvFileReader } from "./CsvFileReader";
 import { MatchResult } from "./MatchResult";
+import { MatchReader } from "./MatchReader";
 
 let manUnitedWins = 0;
 
-const fileReader = new CsvFileReader("football.csv");
+const fileReader = new MatchReader("football.csv");
 fileReader.read();
 
 for (let match of fileReader.data) {
